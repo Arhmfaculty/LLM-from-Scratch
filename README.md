@@ -32,6 +32,7 @@ This project ties directly into my academic focus: building secure, explainable,
 ---
 
 ## 📂 Directory Structure
+
 llm-from-scratch/
 │
 ├── data/
@@ -62,6 +63,7 @@ llm-from-scratch/
 
 ```bash
 pip install torch
+```
 
 ## Contributions
 Pull requests are welcome! Feel free to fork this repo and experiment with:
