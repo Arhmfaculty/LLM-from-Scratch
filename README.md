@@ -31,27 +31,7 @@ This project ties directly into my academic focus: building secure, explainable,
 - 
 ---
 
-## 📂 Directory Structure
-
-llm-from-scratch/
-│
-├── data/
-│ └── tiny_text.txt # Shakespeare dataset
-│
-├── models/
-│ ├── transformer.py # Core TransformerModel
-│ ├── attention.py # MultiHeadSelfAttention module
-│ └── embedding.py # embed the token into a vector
-│
-├── utils.py # Tokenizer and batch functions
-├── config.py # Training config
-├── train.py # Main training script
-├── generate.py # Interactive generation script
-└── README.md
-
----
-
-## 🛠️ Setup & Training
+##  Setup & Training
 
 ### Requirements
 
@@ -78,8 +58,7 @@ Pull requests are welcome! Feel free to fork this repo and experiment with:
 
 - Performance tuning for different hardware
 
-📌 License
-This project is open-sourced under the MIT license.
+
 
 ## 👨‍🎓 About Me
 I’m a Computer Engineering student and researcher focused on AI security, LLM interpretability, and hardware-software co-design for intelligent systems. This project is part of my independent study into building trustable and efficient AI from the ground up.
