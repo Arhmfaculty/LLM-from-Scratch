@@ -1,10 +1,84 @@
-"# onlineShop" 
-The Simple Ordering System will be developed using only Java programming language. This application is a user-friendly kind of system that can easily fit to your needs. The application provide you a basic function that can let order a  items from shop. This system allows you to manage the product listing by adding, deleting, update of all the items. The system also has an add to cart function, this could greatly help customer to select their ordered items. 
+#  LLM-from-Scratch
 
-- **Project’s Scope**
-    - Project will allow a shop owner to manage stocks. The user can add, update prices, and remove products.
-    - The products will be categorized based type.
-    - The system will allow a second user to also add products available on the platform to carte.
-    - The user can filter based on type of products and price.
-    - All transaction details are saved as Text file extension.
-    - User has to sign up before accessing the features
+A simple and extensible transformer-based Language Model built entirely from scratch in PyTorch, trained on the Tiny Shakespeare dataset. This project is part of my ongoing exploration into the inner workings of LLMs, with a strong focus on optimization.
+
+---
+
+##  Project Overview
+
+This repository is a minimal yet complete implementation of a transformer model, covering all the core components of modern LLMs:
+
+- Tokenization (character-level)
+- Positional Encoding
+- Multi-head Self-Attention
+- Transformer Blocks
+- Causal Masking
+- Training loop with CrossEntropy loss
+- Sampling & interactive generation
+
+The goal is not just to train a small LLM, but to understand *how* each building block contributes to the model’s performance, generalization, and learning stability — essential for trustworthy and secure model design.
+
+---
+
+## Academic Context
+
+This project ties directly into my academic focus: building secure, explainable, and efficient AI models. It complements my broader research interests in:
+
+- Model robustness and interpretability
+- Secure machine learning and data privacy
+- Low-level system understanding of ML architectures
+- Exploring how LLMs can be optimized for constrained environments
+- 
+---
+
+## 📂 Directory Structure
+llm-from-scratch/
+│
+├── data/
+│ └── tiny_text.txt # Shakespeare dataset
+│
+├── models/
+│ ├── transformer.py # Core TransformerModel
+│ ├── attention.py # MultiHeadSelfAttention module
+│ └── embedding.py # embed the token into a vector
+│
+├── utils.py # Tokenizer and batch functions
+├── config.py # Training config
+├── train.py # Main training script
+├── generate.py # Interactive generation script
+└── README.md
+
+---
+
+## 🛠️ Setup & Training
+
+### Requirements
+
+- Python 3.8+
+- PyTorch
+- tqdm (optional for progress bars)
+
+### Install dependencies
+
+```bash
+pip install torch
+
+## Contributions
+Pull requests are welcome! Feel free to fork this repo and experiment with:
+
+- Byte-pair tokenization
+
+- Rotary or relative position embeddings
+
+- Training on new datasets
+
+- Adding evaluation metrics (perplexity, BLEU, etc.)
+
+- Performance tuning for different hardware
+
+📌 License
+This project is open-sourced under the MIT license.
+
+## 👨‍🎓 About Me
+I’m a Computer Engineering student and researcher focused on AI security, LLM interpretability, and hardware-software co-design for intelligent systems. This project is part of my independent study into building trustable and efficient AI from the ground up.
+Feel free to connect on LinkedIn or follow my technical blogs on Hashnode where I write about LLMs, security, and embedded AI.
