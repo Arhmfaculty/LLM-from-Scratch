@@ -25,3 +25,13 @@ def generate(prompt, max_tokens=100):
         input_ids = torch.cat([input_ids, next_token], dim=1)
 
     return decode(input_ids[0].tolist())
+
+print("🧠 Mini LLM Interactive Mode (type 'exit' to quit)")
+
+while True:
+    prompt = input(">>> ")
+    if prompt.lower() in {"exit", "quit"}:
+        break
+    output = generate(prompt, max_tokens=100)
+    print("\n📝 Output:\n" + output + "\n")
+
